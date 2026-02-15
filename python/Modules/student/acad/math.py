@@ -1,0 +1,2 @@
+def math():
+    print("math")

@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main()
+{
+    int arr[5], i, max = 0;
+    printf("enter the value of number\n");
+    for (i = 0; i < 5; i++)
+    {
+        printf("enter number [%d] :", i + 1);
+        scanf("%d", &arr[i]);
+    }
+    int length = sizeof(arr) / sizeof(arr[0]);
+    int data = arr[0];
+    for (i = 0; i < 5; i++)
+    {
+        if (length < arr[i])
+        {
+            data = arr[i];
+        }
+    }
+    printf("greatest number %d", data);
+    return 0;
+}
